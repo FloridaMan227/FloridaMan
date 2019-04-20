@@ -379,6 +379,17 @@ $(document).ready(function() {
     "Steals Hot Air Balloon",
     "Steals Car",
     "Steals Multiple Vehicles",
+    "Gets Arrested Skinny Dipping",
+    "Is Caught with P2",
+    "Gets Caught In Drugs Bust",
+    "Reportedly Avoiding Taxes",
+    "Confesses Obscure Terrorist Plot",
+    "Confesses To Being Racist",
+    "Admits to Being Suicidal",
+    "Comes Out as Homosexual",
+    "Comes Out as Bisexual",
+    "Comes Out as Transgender",
+    "Comes Out as Non Binary",
     "Steals A Dollar of Snacks",
     "Steals Candy",
     "Steals Statue",
@@ -457,17 +468,24 @@ $(document).ready(function() {
     "Attacked For Wearing Nazi Memorobelia",
     "Claims There is Proof of Aleins",
     "Attacked By P2",
-    "Reportedly Shot by P2"
+    "Reportedly Shot by P2",
+    "Leaves with 30 Women",
+    "Claims The Earth is Flat",
+    "Claims We Are In A Computer Simulation",
   ];
   var modifiers = [
     "",
+    "at Underage House Party",
     "While At P2s Wedding",
-    "While On P2 Podcast",
+    "While On P2s Podcast",
     "Is Sent To Jail",
     "In Court This Week",
     "At Loc Intersection",
     "At Loc Art Gallery",
+    "At Loc Strip Club",
+    "At Strip Club",
     "After Ariving For Jury Duty Drunk,",
+    "While Making Speech at P2s Wedding",
     "At Loc Hospital",
     "While Carrying An Alligator In Loc",
     "Wearing Clown Hat In Loc",
@@ -478,6 +496,7 @@ $(document).ready(function() {
     "At Loc Film Festival",
     "At Loc Airshow",
     "At Loc Classic Car Festival",
+    "At Loc Music Festival",
     "At Loc Business Expo",
     "At Loc Airport",
     "At Loc Mall",
@@ -493,7 +512,9 @@ $(document).ready(function() {
     "During a Protest in Loc",
     "At a Speech in Loc",
     "At Climate Demonstration",
-    "Nobody Injured"
+    "Nobody Injured",
+    "On Loc Beach",
+    "On Mountain In Loc"
   ];
   var locations = [
     "Aberdeen",
@@ -806,7 +827,7 @@ $(document).ready(function() {
     console.log(randomItem, randomItem2, randomItem3, location);
     first.delay(50).html(randomItem.replace("Loc", location));
     second.delay(50).html(randomItem2.replace("P2", person2).replace('Loc', location2));
-    third.delay(50).html(randomItem3.replace('Loc', location3).replace("P2", person3));
+    third.delay(50).html(randomItem3.replace("P2", person3).replace('Loc', location3));
     $('#first').fadeIn(100);
     $('#second').delay(600).fadeIn(100);
     $('#third').delay(1200).fadeIn(100);
