@@ -410,7 +410,7 @@ $(document).ready(function() {
     "Calls Fire Department",
     "Smoked Crack",
     "Donates A Million Dollars To Charity",
-    "Smoked Marajuana In Online Podcast,",
+    "Smoked Marajuana",
     "Says Turtle Army Will Destroy Everyone",
     "Had Daughter Sell Pot Brownies",
     "Bites Dog, Then Brother",
@@ -419,6 +419,7 @@ $(document).ready(function() {
     "Robs KFC",
     "Offers Favors For $25 and Chicken McNuggets",
     "Fired For Sleeping With Clients,",
+    "Tries To Run Over P2",
     "Tries To Run Over Ex-Boyfriend Twice After Break-Up,",
     "Tries To Run Over Ex-Girlfriend Twice After Break-Up,",
     "Reported Drug Deal Robbery,",
@@ -440,6 +441,7 @@ $(document).ready(function() {
     "Calls Police to Report A Bomb",
     "Released Poisonous Snakes,",
     "Shot Twice After Daring Brother To Shoot Them",
+    "Shot Twice After Daring P2 To Shoot Them",
     "Uses Softball Skills To Bash Half-Naked Burglar's Head With Bat",
     "Attacked Taking Selfie",
     "Falls Off Building",
@@ -459,6 +461,8 @@ $(document).ready(function() {
   ];
   var modifiers = [
     "",
+    "While At P2s Wedding",
+    "While On P2 Podcast",
     "Is Sent To Jail",
     "In Court This Week",
     "At Loc Intersection",
@@ -483,12 +487,13 @@ $(document).ready(function() {
     "In Loc",
     "While Begging For Money In Loc",
     "Playing Show in Loc",
-    "While Making A Speech In Loc",
-    "After Making A Speech In Loc",
-    "During A Protest",
-    "During A Protest in Loc",
-    "At A Speech in Loc",
-    "At Climate Demonstration"
+    "While Making a Speech In Loc",
+    "After Making a Speech In Loc",
+    "During a Protest",
+    "During a Protest in Loc",
+    "At a Speech in Loc",
+    "At Climate Demonstration",
+    "Nobody Injured"
   ];
   var locations = [
     "Aberdeen",
@@ -791,11 +796,13 @@ $(document).ready(function() {
     var randomItem3 = modifiers[Math.floor(Math.random() * modifiers.length)];
     var location = locations[Math.floor(Math.random() * locations.length)];
     var location2 = locations[Math.floor(Math.random() * locations.length)];
+    var location3 = locations[Math.floor(Math.random() * locations.length)];
     var person2 = myArray[Math.floor(Math.random() * myArray.length)];
+    var person3 = myArray[Math.floor(Math.random() * myArray.length)];
 
     console.log(randomItem, randomItem2, randomItem3, location);
     first.html(randomItem.replace("Loc", location));
-    second.html(randomItem2.replace("P2", person2).replace('Loc', location));
-    third.html(randomItem3.replace('Loc', location2));
+    second.html(randomItem2.replace("P2", person2).replace('Loc', location2));
+    third.html(randomItem3.replace('Loc', location3).replace("P2", person3));
     });
   });
