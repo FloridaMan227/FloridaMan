@@ -5,7 +5,7 @@ html {
 
 body {
   height: 100vh;
-  background-image: image("ImagesG.png");
+  background-image: url("ImagesG.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
