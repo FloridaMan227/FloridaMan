@@ -475,6 +475,11 @@ $(document).ready(function() {
   ];
   var modifiers = [
     "",
+    "In Loc",
+    "In Loc",
+    "In Loc",
+    "In Loc",
+    "In Loc",
     "at Underage House Party",
     "While At P2s Wedding",
     "While On P2s Podcast",
