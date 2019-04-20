@@ -28,21 +28,23 @@ body {
 .headlinecontainer .third,
 .headlinecontainer p {
   text-align: center;
-  font-size: 5vmax;
+  font-size: 4.5vmax;
   font-family: Tinos;
   font-weight: 700;
   letter-spacing: -1px;
-  padding-right: 7px;
+  padding-right: 10px;
 }
 
 .btn {
   background-color: white;
   border-radius: 10px;
-  width: 20vh;
   padding: 10px;
   font-family: Roboto Condensed;
   font-size: 16px;
-  margin: 0 auto;
+  position: absolute;
+  bottom: 10vmax;
+  left: 40%;
+  right: 40%;
   text-align: center;
   cursor: pointer;
   transition: 0.2s ease-in-out;
