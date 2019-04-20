@@ -58,7 +58,7 @@ $(document).ready(function() {
     "Advertises Counterfeit Cash For Sale On Craigslist,",
     "Stabs Husband With Sword,",
     "Stabs Wife With Sword,",
-    "Attacks ATM For ‘Giving Him Too Much Money’",
+    "Attacks ATM For ‘Giving Them Too Much Money’",
     "Eats Chicken, Drinks Wine,",
     "Released Poisonous Snakes,",
     "Shot Twice After Daring Brother To Shoot Them,",
