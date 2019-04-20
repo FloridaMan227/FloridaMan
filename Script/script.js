@@ -787,6 +787,9 @@ $(document).ready(function() {
       ];
 
   $('.btn').click(function() {
+    $('#first').fadeOut(1);
+    $('#second').fadeOut(1);
+    $('#third').fadeOut(1);
     var first = $('#first');
     var second = $('#second');
     var third = $('#third');
@@ -801,8 +804,11 @@ $(document).ready(function() {
     var person3 = myArray[Math.floor(Math.random() * myArray.length)];
 
     console.log(randomItem, randomItem2, randomItem3, location);
-    first.html(randomItem.replace("Loc", location));
-    second.html(randomItem2.replace("P2", person2).replace('Loc', location2));
-    third.html(randomItem3.replace('Loc', location3).replace("P2", person3));
+    first.delay(50).html(randomItem.replace("Loc", location));
+    second.delay(50).html(randomItem2.replace("P2", person2).replace('Loc', location2));
+    third.delay(50).html(randomItem3.replace('Loc', location3).replace("P2", person3));
+    $('#first').fadeIn(100);
+    $('#second').delay(600).fadeIn(100);
+    $('#third').delay(1200).fadeIn(100);
     });
   });
