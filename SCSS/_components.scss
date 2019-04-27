@@ -7,7 +7,7 @@ html {
 }
 
 body {
-background-image: url(/Images/wood.jpg);
+background-image: url("../Images/wood.jpg");
 background-size: cover;
 }
 .btn{
@@ -30,7 +30,7 @@ background-size: cover;
   z-index: 100;
   bottom: 20px;
   background-size: cover;
-  background-image: url(/Images/coffee.png);
+  background-image: url("../Images/coffee.png");
   height: 30vmin;
   width: 25vmin;
 }
@@ -107,7 +107,7 @@ background-size: cover;
   &__sub{
     background-position: center;
     width: 50%;
-    background-image: url(/Images/article.png);
+    background-image: url("../Images/article.png");
     height: 12vw;
   background-size: cover;
 background-repeat: repeat-y;
