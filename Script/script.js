@@ -1741,7 +1741,7 @@ $(document).ready(function() {
       randomCompany,
     )
     var defaultPaper = "[NAT] [NPP]"
-    var fullPaper = defaultPaper.replace("[NAT]", randomNationality).replace("[NPP]", randomPaper);
+    var fullPaper = defaultPaper.replace("[NAT]", randomCity).replace("[NPP]", randomPaper);
     $('.headline').html(fullPaper);
     //REPLACE FIRST & REPLACE VARS
     first.delay(0).html(randomPerson.replace("[LOC]", randomNationality).replace('[VEH]', randomLandVEH).replace('[OCC]', randomOccupation));
