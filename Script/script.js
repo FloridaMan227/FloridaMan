@@ -1653,7 +1653,7 @@ $(document).ready(function() {
 
 
   $('.btn').click(function() {
-    $('.paper').addClass('spinning').delay(700).queue(function(){
+    $('.paper').addClass('spinning').delay(700).queue(function() {
       $('.paper').removeClass('spinning').dequeue();
     });
     // fade out items on click
@@ -1748,10 +1748,12 @@ $(document).ready(function() {
     second.delay(0).html(randomEvent.replace("[P2]", randomPerson2).replace('[LOC]', randomNationality).replace("[VEH]", randomLandVEH).replace("[SMAN]", randomSAnimal).replace("[COMP]", randomCompany).replace("[DRUG]", randomDrug).replace("[HUND]", randomHundred).replace("[BANI]", randomLAnimal).replace("[OCC]", randomOccupation));
     //REPLACE THIRD & REPLACE VARS
     third.delay(0).html(randomModifier.replace("[P2]", randomPerson2).replace('[LOC]', randomCity).replace("[VEH]", randomAllVEH).replace("[NAT]", randomNationality).replace("[CITY]", randomCity).replace("[SMAN]", randomSAnimal).replace('[OCC]', randomOccupation));
+
     //PRINT VATS INTO HTML
     $('#first').fadeIn(300);
     $('#second').fadeIn(300);
     $('#third').fadeIn(300);
     $('.headline').fadeIn(300);
+    var keyword = randomPerson;
   });
 });
