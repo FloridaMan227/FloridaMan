@@ -891,7 +891,6 @@ $(document).ready(function() {
     "Copenhagen",
     "Cordoba",
     "Dakar",
-    "Darwin",
     "Djibouti",
     "Dublin",
     "Durban",
