@@ -114,14 +114,14 @@ $(document).ready(function() {
 console.log(celebStatus)
 if (celebStatus == "Normal") {
   if (crimePicker == "True") {
-    var keyword = "Police Car, Cop Car, Car Crash, Crime Scene, Courtroom, Courthouse, Protest, Road,"
+    var keyword = "Police Car, Cop Car, Car Crash, Crime Scene, Courtroom, Courthouse, Protest,"
   }
   else {
     var keyword = whatgender
   }
 }else {
   if (crimePicker == "True") {
-    var keyword = "Police Car, Cop Car, Car Crash, Crime Scene, Courtroom, Courthouse, Protest, Road,"
+    var keyword = "Police Car, Cop Car, Car Crash, Crime Scene, Courtroom, Courthouse, Protest,"
   }else {
     var keyword = first.html();
   }
