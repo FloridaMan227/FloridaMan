@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  $('.btn').click(function() {
+  function algorithmn(){
     $('.paper').addClass('spinning').delay(700).queue(function() {
       $('.paper').removeClass('spinning').dequeue();
     });
@@ -111,34 +111,40 @@ $(document).ready(function() {
     $('#second').fadeIn(300);
     $('#third').fadeIn(300);
     $('.headline').fadeIn(300);
-console.log(celebStatus)
-if (celebStatus == "Normal") {
-  if (crimePicker == "True") {
-    var keyword = "Police Car, Cop Car, Car Crash, Crime Scene, Courtroom, Courthouse, Protest,"
-  }
-  else {
-    var keyword = whatgender
-  }
-}else {
-  if (crimePicker == "True") {
-    var keyword = "Police Car, Cop Car, Car Crash, Crime Scene, Courtroom, Courthouse, Protest,"
-  }else {
-    var keyword = first.html();
-  }
-}
-console.log(keyword)
+    console.log(celebStatus)
+    if (celebStatus == "Normal") {
+      if (crimePicker == "True") {
+        var keyword = "Police Car, Cop Car, Car Crash, Crime Scene, Courtroom, Courthouse, Protest,"
+      } else {
+        var keyword = whatgender
+      }
+    } else {
+      if (crimePicker == "True") {
+        var keyword = "Police Car, Cop Car, Car Crash, Crime Scene, Courtroom, Courthouse, Protest,"
+      } else {
+        var keyword = first.html();
+      }
+    }
+    console.log(keyword)
     var keyword2 = second.html();
 
     $.getJSON("https://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?", {
-        tags: keyword,
-        tagmode: "any",
-        format: "json"
-      },
-      function(data) {
-        var rnd = Math.floor(Math.random() * data.items.length);
-        var image_src = data.items[rnd]['media']['m'].replace("_m", "_b");
-        $('.paper__articleImage').css('background-image', "url('" + image_src + "')");
-      });
+      tags: keyword,
+      tagmode: "any",
+      format: "json"
+    },
+    function(data) {
+      var rnd = Math.floor(Math.random() * data.items.length);
+      var image_src = data.items[rnd]['media']['m'].replace("_m", "_b");
+      $('.paper__articleImage').css('background-image', "url('" + image_src + "')");
+    });
+  }
+  $('.btn').click(algorithmn);
+  $(document).keydown(function(e) {
+    if (e.keyCode == 32) {
+      algorithmn();
+      return false;
+    }
 
   });
 });
